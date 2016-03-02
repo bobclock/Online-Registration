@@ -1,0 +1,250 @@
+/*Main page styles*/
+
+body {
+  background-color: white;
+  color: rgb(125,134,149);
+  font-family: 'PT Serif', serif;
+}
+
+h1 {
+  font-weight: bold;
+  color: rgb(47, 56, 68);
+  font-size: 1.5em; /* 24/16 */
+  padding: 0;
+  margin: 20px 0;
+}
+
+p {
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25em; /* 20/16 */
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*Header styles*/
+
+header {
+  background-color: rgb(47, 56, 68);
+  padding: 20px 0;
+  color: white;
+  font-size: 1.25em; /* 20/16 */
+}
+
+.title {
+  font-family: 'PT Serif', serif;
+  font-size: 1em; /* 16/16 */
+}
+
+header p {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/*Div stylings*/
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.centre {
+  text-align: center;
+}
+
+#signup {
+  border-bottom: solid 4px rgb(47, 56, 68);
+}
+
+#signup p {
+  padding-bottom: 25px;
+}
+
+#contactInfo {
+  margin-top: 4px;
+  padding-bottom: 16px;
+  border-top: solid 2px rgb(47, 56, 68);
+  border-bottom: solid 2px rgb(47, 56, 68);
+}
+
+#newsletter p {
+  margin: 15px 0;
+}
+
+#topics {
+  margin-top: 15px;
+  font-size: 1.25em; /* 20/16 */
+}
+
+/*Form styles*/
+
+input, select, textarea {
+  background-color: #f4f4f4;
+  width: 100%;
+  margin: 20px 0;
+  height: 60px;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  color: #ccc;
+  font-size: 1em;
+  border: 0;
+  border-radius: 5px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+input:hover, select:hover, textarea:hover {
+  border: solid 2px rgb(47, 56, 68);
+  box-shadow: none;
+}
+
+
+
+input:focus, textarea:focus {
+  border: solid 2px rgb(47, 56, 68);
+  box-shadow: none;
+  color: black;
+}
+
+
+input[type="checkbox"], input[type="radio"]{
+  margin: 10px 0;
+  width: 20px;
+  height: 15px;
+  cursor: grab;
+}
+
+label {
+  display: block;
+}
+
+#other {
+  height: 100px;
+  padding: 0;
+}
+
+.sub {
+  padding: 10px 15px 11px;
+  font-size: 18px;
+  background-color: #4cc2bc;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: grab;
+  border: solid 0;
+}
+
+.sub:hover {
+  background-color: rgb(47, 56, 68);
+  transition: 1s;
+}
+
+input:placeholder-shown {
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.75em; /* 12/16 */
+}
+
+input::-webkit-input-placeholder {
+  text-align: right;
+  color: rgb(175, 7, 50);
+  padding-right: 20px;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+  text-align: right;
+  color: rgb(175, 7, 50);
+  padding-right: 20px;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+  text-align: right;
+  color: rgb(175, 7, 50);
+  padding-right: 20px;
+}
+
+input:-ms-input-placeholder {
+  text-align: right;
+  color: rgb(175, 7, 50);
+  padding-right: 20px;
+}
+
+
+/*footer styles*/
+
+footer {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+footer p {
+  font-family: 'PT Serif', serif;
+  font-size: 0.75em; /* 12/16 */
+}
+
+/*media queries*/
+
+@media (min-width: 760px) {
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  header p:hover {
+    text-shadow: rgb(175,7,50) 1px 1px; 
+  }
+
+  .centre {
+    margin-top: 66px;
+  }
+
+  body {
+    background-color: #f4f4f4;
+  }
+
+  .copyright {
+    padding: 20px;
+    color: black;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 50%;
+    padding: 20px;
+    background-color: white;
+  }
+
+  #contactInfo label {
+    display: inline-block;
+    width: 30%;
+  }
+
+  #contactInfo input, #contactInfo select {
+    display: inline-block;
+    width: 69%;
+  }
+}
+
+@media (min-width: 1072px) {
+  #contactInfo label {
+    width: 20%;
+  }
+
+  #contactInfo input, #contactInfo select {
+    width: 79%;
+  }
+}
