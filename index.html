@@ -100,13 +100,52 @@
     </form>
   </div>
 
+  <div id="about" class="container">
+    <form action="index.html">
+      <fieldset>
+        <legend>
+          <h1>About You</h1>
+        </legend>
+        <p id="characteristics">
+          We would like to know a little bit about the people registering for our newsletter, please if you have the time complete the sections below.
+        </p>
+        <p class="labels">
+          Sex
+        </p>
+        <form>
+          <div class="rad">
+            <input type="radio" name="sex" value="male" checked> Male<br>
+            <input type="radio" name="sex" value="female"> Female<br>
+          </div>
+        <select id="age" size="1">
+        	<option selected="selected" class="statePlaceholder">Please select your age</option>
+          <option value="<18">Under 18</option>
+        	<option value="18-24">18 to 24</option>
+        	<option value="25-34">25 to 34</option>
+        	<option value="35-44">35 - 44</option>
+        	<option value="45-54">45 - 54</option>
+        	<option value="55-64">55 - 64</option>
+        	<option value=">65">65 or over</option>
+        </select>
+        <select id="education" size="1">
+          <option selected="selected" class="statePlaceholder">Select your education level</option>
+          <option value="HS">High school</option>
+          <option value="UGrad">Under graduate</option>
+          <option value="Grad">Graduate</option>
+          <option value="PGrad">Post graduate</option>
+          <option value="Doc">Doctorate</option>
+        </select>
+      </fieldset>
+    </form>
+  </div>
+
   <div id="newsletter" class="container">
     <form action="index.html">
       <fieldset>
         <legend>
           <h1>Newsletter</h1>
         </legend>
-        <p>
+        <p class="labels">
           Select the newsletters you would like to receive
         </p>
         <label for="" class="css-label">
@@ -114,7 +153,7 @@
           <input type="checkbox" name="newsletter" class="css-checkbox" value="css" checked> CSS News<br/>
           <input type="checkbox" name="newsletter" class="css-checkbox" value="javascript"> Javascript News<br/>
         </label>
-        <p>
+        <p class="labels">
           Newsletter format
         </p>
         <form>

@@ -28,6 +28,11 @@ fieldset {
   padding: 0;
 }
 
+#characteristics {
+  font-size: 1em;
+  padding: 10px 0;
+}
+
 /*Header styles*/
 
 header {
@@ -78,6 +83,10 @@ header p {
 
 #newsletter p {
   margin: 15px 0;
+}
+
+#about {
+  border-bottom: solid 2px rgb(47, 56, 68);
 }
 
 #topics {
@@ -205,7 +214,7 @@ footer p {
   }
 
   header p:hover {
-    text-shadow: rgb(175,7,50) 1px 1px; 
+    text-shadow: rgb(175,7,50) 1px 1px;
   }
 
   .centre {
