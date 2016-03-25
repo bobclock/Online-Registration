@@ -23,161 +23,146 @@
     </p>
   </div>
 
-  <div id="contactInfo" class="container">
-    <form action="index.html">
-      <fieldset>
-        <legend>
-          <h1>Contact Information</h1>
-        </legend>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="required" required="required">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="required" required="required">
-        <label for="telephone">Phone Number</label>
-        <input type="tel" placeholder="incl. area code" id="telephone">
-        <label for="street">Street Address</label>
-        <input type="text" id="street">
-        <label for="city">City</label>
-        <input type="text" id="city">
-        <label for="state">State</label>
-        <select id="state" size="1">
-        	<option selected="selected" class="statePlaceholder">Choose State</option>
-          <option value="AL">Alabama</option>
-        	<option value="AK">Alaska</option>
-        	<option value="AZ">Arizona</option>
-        	<option value="AR">Arkansas</option>
-        	<option value="CA">California</option>
-        	<option value="CO">Colorado</option>
-        	<option value="CT">Connecticut</option>
-        	<option value="DE">Delaware</option>
-        	<option value="DC">District Of Columbia</option>
-        	<option value="FL">Florida</option>
-        	<option value="GA">Georgia</option>
-        	<option value="HI">Hawaii</option>
-        	<option value="ID">Idaho</option>
-        	<option value="IL">Illinois</option>
-        	<option value="IN">Indiana</option>
-        	<option value="IA">Iowa</option>
-        	<option value="KS">Kansas</option>
-        	<option value="KY">Kentucky</option>
-        	<option value="LA">Louisiana</option>
-        	<option value="ME">Maine</option>
-        	<option value="MD">Maryland</option>
-        	<option value="MA">Massachusetts</option>
-        	<option value="MI">Michigan</option>
-        	<option value="MN">Minnesota</option>
-        	<option value="MS">Mississippi</option>
-        	<option value="MO">Missouri</option>
-        	<option value="MT">Montana</option>
-        	<option value="NE">Nebraska</option>
-        	<option value="NV">Nevada</option>
-        	<option value="NH">New Hampshire</option>
-        	<option value="NJ">New Jersey</option>
-        	<option value="NM">New Mexico</option>
-        	<option value="NY">New York</option>
-        	<option value="NC">North Carolina</option>
-        	<option value="ND">North Dakota</option>
-        	<option value="OH">Ohio</option>
-        	<option value="OK">Oklahoma</option>
-        	<option value="OR">Oregon</option>
-        	<option value="PA">Pennsylvania</option>
-        	<option value="RI">Rhode Island</option>
-        	<option value="SC">South Carolina</option>
-        	<option value="SD">South Dakota</option>
-        	<option value="TN">Tennessee</option>
-        	<option value="TX">Texas</option>
-        	<option value="UT">Utah</option>
-        	<option value="VT">Vermont</option>
-        	<option value="VA">Virginia</option>
-        	<option value="WA">Washington</option>
-        	<option value="WV">West Virginia</option>
-        	<option value="WI">Wisconsin</option>
-        	<option value="WY">Wyoming</option>
-        </select>
-        <label for="zip">Zip Code</label>
-        <input type="text" id="zip">
-      </fieldset>
-    </form>
-  </div>
 
-  <div id="about" class="container">
-    <form action="index.html">
-      <fieldset>
-        <legend>
-          <h1>About You</h1>
-        </legend>
-        <p id="characteristics">
-          We would like to know a little bit about the people registering for our newsletter, please if you have the time complete the sections below.
-        </p>
-        <p class="labels">
-          Sex
-        </p>
-        <form>
-          <div class="rad">
-            <input type="radio" name="sex" value="male" checked> Male<br>
-            <input type="radio" name="sex" value="female"> Female<br>
-          </div>
-        <select id="age" size="1">
-        	<option selected="selected" class="statePlaceholder">Please select your age</option>
+  <form action="index.html" method="post">
+    <fieldset id="contactInfo" class="container">
+      <legend>
+        Contact Information
+      </legend>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="required" required="required">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="required" required="required">
+      <label for="telephone">Phone Number</label>
+      <input type="tel" placeholder="incl. area code" id="telephone">
+      <label for="street">Street Address</label>
+      <input type="text" id="street">
+      <label for="city">City</label>
+      <input type="text" id="city">
+      <label for="state">State</label>
+      <select id="state" size="1">
+        <option selected="selected" class="statePlaceholder">Choose State</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+        <option value="DC">District Of Columbia</option>
+        <option value="FL">Florida</option>
+        <option value="GA">Georgia</option>
+        <option value="HI">Hawaii</option>
+        <option value="ID">Idaho</option>
+        <option value="IL">Illinois</option>
+        <option value="IN">Indiana</option>
+        <option value="IA">Iowa</option>
+        <option value="KS">Kansas</option>
+        <option value="KY">Kentucky</option>
+        <option value="LA">Louisiana</option>
+        <option value="ME">Maine</option>
+        <option value="MD">Maryland</option>
+        <option value="MA">Massachusetts</option>
+        <option value="MI">Michigan</option>
+        <option value="MN">Minnesota</option>
+        <option value="MS">Mississippi</option>
+        <option value="MO">Missouri</option>
+        <option value="MT">Montana</option>
+        <option value="NE">Nebraska</option>
+        <option value="NV">Nevada</option>
+        <option value="NH">New Hampshire</option>
+        <option value="NJ">New Jersey</option>
+        <option value="NM">New Mexico</option>
+        <option value="NY">New York</option>
+        <option value="NC">North Carolina</option>
+        <option value="ND">North Dakota</option>
+        <option value="OH">Ohio</option>
+        <option value="OK">Oklahoma</option>
+        <option value="OR">Oregon</option>
+        <option value="PA">Pennsylvania</option>
+        <option value="RI">Rhode Island</option>
+        <option value="SC">South Carolina</option>
+        <option value="SD">South Dakota</option>
+        <option value="TN">Tennessee</option>
+        <option value="TX">Texas</option>
+        <option value="UT">Utah</option>
+        <option value="VT">Vermont</option>
+        <option value="VA">Virginia</option>
+        <option value="WA">Washington</option>
+        <option value="WV">West Virginia</option>
+        <option value="WI">Wisconsin</option>
+        <option value="WY">Wyoming</option>
+      </select>
+      <label for="zip">Zip Code</label>
+      <input type="text" id="zip">
+    </fieldset>
+
+    <fieldset id="about" class="container">
+      <legend>
+        About You
+      </legend>
+      <p id="characteristics">
+        We would like to know a little bit about the people registering for our newsletter, please if you have the time complete the sections below.
+      </p>
+      <label class="full-width">What is your gender</label>
+      <input type="radio" id="male" name="sex" value="male" checked><label for="male" class="option gender">Male</label><br/>
+      <input type="radio" id="female" name="sex" value="female"><label for="female" class="option gender">Female</label><br/>
+      <label for="age">Age</label>
+      <select id="age" size="1">
+        <option selected="selected" class="statePlaceholder">Select your age</option>
+        <optgroup label="Junior">
           <option value="<18">Under 18</option>
-        	<option value="18-24">18 to 24</option>
-        	<option value="25-34">25 to 34</option>
-        	<option value="35-44">35 - 44</option>
-        	<option value="45-54">45 - 54</option>
-        	<option value="55-64">55 - 64</option>
-        	<option value=">65">65 or over</option>
-        </select>
-        <select id="education" size="1">
-          <option selected="selected" class="statePlaceholder">Select your education level</option>
-          <option value="HS">High school</option>
-          <option value="UGrad">Under graduate</option>
-          <option value="Grad">Graduate</option>
-          <option value="PGrad">Post graduate</option>
-          <option value="Doc">Doctorate</option>
-        </select>
-      </fieldset>
-    </form>
-  </div>
+          <option value="18-24">18 to 24</option>
+        </optgroup>
+        <optgroup label="Adult">
+          <option value="25-34">25 to 34</option>
+          <option value="35-44">35 to 44</option>
+          <option value="45-54">45 to 54</option>
+        </optgroup>
+        <optgroup label="Senior">
+          <option value="55-64">55 to 64</option>
+          <option value=">65">65 or over</option>
+        </optgroup>
+      </select>
+      <label for="education">Education</label>
+      <select id="education" size="1">
+        <option selected="selected" class="statePlaceholder">Select your education level</option>
+        <option value="HS">High school</option>
+        <option value="UGrad">Under graduate</option>
+        <option value="Grad">Graduate</option>
+        <option value="PGrad">Post graduate</option>
+        <option value="Doc">Doctorate</option>
+      </select>
 
-  <div id="newsletter" class="container">
-    <form action="index.html">
-      <fieldset>
-        <legend>
-          <h1>Newsletter</h1>
-        </legend>
-        <p class="labels">
-          Select the newsletters you would like to receive
-        </p>
-        <label for="" class="css-label">
-          <input type="checkbox" name="newsletter" class="css-checkbox" value="html"> HTML News<br/>
-          <input type="checkbox" name="newsletter" class="css-checkbox" value="css" checked> CSS News<br/>
-          <input type="checkbox" name="newsletter" class="css-checkbox" value="javascript"> Javascript News<br/>
-        </label>
-        <p class="labels">
-          Newsletter format
-        </p>
-        <form>
-          <div class="rad">
-            <input type="radio" name="format" value="HTML" checked> HTML<br>
-            <input type="radio" name="format" value="Plain"> Plain text<br>
-          </div>
-        </form>
-        <p>
-          Are you happy to be contacted to contribute to the newsletter?
-        </p>
-        <form>
-          <div class="rad">
-            <input type="radio" name="format" value="HTML" checked> Yes<br>
-            <input type="radio" name="format" value="Plain"> No<br>
-          </div>
-        </form>
-        <label id="topics" for="other">Other topics you'd like to hear about</label>
-        <textarea name="topics" id="other">I would like to hear about...</textarea>
-    		<input class="sub default" type="submit" value="Sign Up">
-      </fieldset>
-    </form>
+    </fieldset>
 
-	</div>
+    <fieldset id="newsletter" class="container">
+      <legend>
+        Newsletter
+      </legend>
+      <label class="full-width">Select the newsletters you would like to receive</label>
+        <input type="checkbox" id="html" name="newsletter" value="newsletter_html"><label class="option" for="html">HTML News</label><br/>
+        <input type="checkbox" id="CSS" name="newsletter" value="newsletter_css" checked><label class="option" for="CSS">CSS News</label><br/>
+        <input type="checkbox" id="JS" name="newsletter" value="newsletter_javascript"><label class="option" for="JS">JavaScript News</label><br/>
+      <label class="full-width">
+        Newsletter format
+      </label>
+          <input type="radio" id="html_view" name="format" value="HTML" checked><label for="html_view" class="option">HTML</label><br/>
+          <input type="radio" id="plain_view" name="format" value="Plain"><label for="plain_view" class="option">Plain text</label><br/>
+      <label class="full-width">
+        Are you happy to be contacted to contribute to the newsletter?
+      </label>
+        <input type="checkbox" id="Yes" name="contact" value="contact_yes"><label class="option" for="Yes">Yes</label><br/>
+        <input type="checkbox" id="No" name="contact" value="contact_no" checked><label class="option" for="No">No</label>
+      <label id="topics" for="other" class="full-width">Other topics you'd like to hear about</label>
+      <textarea name="topics" id="other">I would like to hear about...</textarea>
+      <button class="sub default" type="submit" value="Sign Up">Sign Up</button>
+
+    </fieldset>
+
+
+    </form>
 
     <footer>
       <p class="copyright">&copy;The Code Review</p>
